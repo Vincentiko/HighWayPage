@@ -1,0 +1,65 @@
+body {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Asegura que ocupe toda la pantalla */
+    margin: 0;
+}
+
+.card {
+    width: 30rem;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.card-body{
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Botón */
+.btn-bd-primary {
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.navbar {
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Asegura que esté al inicio de la página */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Coloca el navbar por encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra elegante */
+}
+
+.container-fluid {
+    padding: 0 20px; /* Ajusta el espacio interno para que no quede pegado */
+}
+
+/* Ajusta el fondo según lo que necesites */
+.bg-body-tertiary {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-bottom: 1px solid #ddd; /* Línea de separación sutil */
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Ajusta el ancho a 90% del contenedor */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .btn-bd-primary {
+        font-size: 1rem; /* Botón más pequeño */
+        padding: 8px 16px;
+    }
+}
