@@ -1,27 +1,29 @@
 body {
-    background-color: red;
+    background: linear-gradient(to right, #f00f0f, #5d69ec); /* Fondo degradado suave */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Asegura que ocupe toda la pantalla */
+    height: flex; /* Asegura que ocupe toda la pantalla */
+    min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si son muchas */
     margin: 0;
 }
 
+
 .card {
+    margin-top: 60px;
     width: 30rem;
     height: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-.card-body{
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px;
-    text-align: center;
-}
+.carousel-inner img {
+    border-radius: 20px; /* Ajusta el valor según qué tan curvado quieras el borde */
+  }
+  
 /* Botón */
 .btn-bd-primary {
     color: white;
